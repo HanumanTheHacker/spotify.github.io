@@ -11,6 +11,7 @@ body{
 
 nav{
     font-family: 'Ubuntu', sans-serif;
+    width: 150%;
 }
 
 nav ul{
@@ -54,6 +55,7 @@ nav ul li{
     position: sticky;
     bottom: 0;
     height: 130px;
+    width: 150%;
     background-color: black;
     color: rgb(21, 247, 13);
     display: flex;
