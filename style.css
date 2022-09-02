@@ -44,7 +44,7 @@ nav ul li{
    font-family: 'Varela Round', sans-serif;
    display: flex;
    margin: 23px auto;
-   width: 70%;
+   width: 100%;
    border-radius: 12px;
    padding: 34px;
    background-image: url('bg.jpg');
