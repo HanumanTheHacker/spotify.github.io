@@ -11,8 +11,9 @@
     <nav>
         <ul>
             <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
-            <li>Home</li>
-            <li>About</li>
+            <li id="homeBtn">Home</li>
+            <li id="aboutBtn">About</li>
+
         </ul>
     </nav>
 
@@ -75,6 +76,13 @@
         </div>
         <div class="songBanner"></div>
     </div>
+    <!-- About section (hidden by default) -->
+    <div id="aboutSection" style="visibility:hidden; position:absolute; width:100%; text-align:center; padding:40px; color:white; background:rgba(0,0,0,0.4);">
+    <h2>About</h2>
+    <p>Welcome to my Spotify-inspired music player project — a creative blend of design, functionality, and web development. This project is built purely using HTML, CSS, and JavaScript to simulate a simple yet elegant music streaming interface. The goal was to understand how music players work behind the scenes — from handling play/pause actions to updating progress bars dynamically. Every element, from the navigation bar to the playlist and controls, has been customized to offer a smooth and interactive experience. Through this project, I explored DOM manipulation, event handling, and responsive layout design while also adding my personal creative touch to the overall interface.</p>
+    </div>
+
+
 
     <div class="bottom">
         <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
@@ -90,5 +98,25 @@
     </div>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+    <script>
+    const homeBtn = document.getElementById('homeBtn');
+    const aboutBtn = document.getElementById('aboutBtn');
+    const homeSection = document.querySelector('.container');
+    const aboutSection = document.getElementById('aboutSection');
+
+    homeBtn.addEventListener('click', () => {
+    homeSection.style.visibility = 'visible';
+    homeSection.style.position = 'relative';
+    aboutSection.style.visibility = 'hidden';
+    aboutSection.style.position = 'absolute';
+    });
+
+    aboutBtn.addEventListener('click', () => {
+    homeSection.style.visibility = 'hidden';
+    homeSection.style.position = 'absolute';
+    aboutSection.style.visibility = 'visible';
+    aboutSection.style.position = 'relative';
+    });
+    </script>
 </body>
 </html>
