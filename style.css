@@ -122,3 +122,38 @@ nav ul li{
       background-color: red;
     }
   }
+
+  .footer {
+    background-color: #000;
+    color: rgb(21, 247, 13);
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    border-top: 1px solid rgb(21, 247, 13);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: rgb(21, 247, 13);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
