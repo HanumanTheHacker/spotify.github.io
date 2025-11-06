@@ -12,6 +12,8 @@ body{
 nav{
     font-family: 'Ubuntu', sans-serif;
     width: 150%;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 nav ul{
@@ -21,6 +23,11 @@ nav ul{
     height: 65px;
     background-color: black;
     color: rgb(21, 247, 13);
+}
+
+nav ul li:hover {
+  color: #1db954; /* Spotify green */
+  transform: scale(1.05);
 }
 
 nav ul li{
@@ -122,3 +129,27 @@ nav ul li{
       background-color: red;
     }
   }
+#themeToggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+#themeToggle:hover {
+  transform: scale(1.2);
+}
+
+.light-theme {
+  background-color: #f0f0f0;
+  color: #000;
+}
+.light-theme nav {
+  background-color: #fff;
+  color: #000;
+}
+.light-theme #themeToggle {
+  color: #000;
+}
